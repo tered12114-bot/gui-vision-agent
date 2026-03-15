@@ -1,0 +1,38 @@
+{
+  "skill_name": "gui-vision",
+  "evals": [
+    {
+      "id": 1,
+      "name": "simple-click",
+      "prompt": "帮我点击屏幕左上角的'活动'按钮",
+      "expected_output": "Agent 应该能够截取屏幕，分析界面，找到'活动'按钮并点击它",
+      "assertions": [
+        "应该调用 capture_screen 截图",
+        "应该调用模型分析界面",
+        "应该执行 click 操作"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "form-fill",
+      "prompt": "在搜索框中输入'Python教程'并点击搜索按钮",
+      "expected_output": "Agent 应该找到搜索框，输入文本，然后点击搜索按钮",
+      "assertions": [
+        "应该识别搜索框位置",
+        "应该执行 type 操作输入文本",
+        "应该执行 click 操作点击搜索按钮"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "multi-step",
+      "prompt": "打开文件管理器，导航到 Documents 文件夹，找到 report.docx 文件并双击打开",
+      "expected_output": "Agent 应该执行多步骤操作：打开应用、导航、定位文件、双击",
+      "assertions": [
+        "应该执行多个步骤",
+        "应该保持操作历史",
+        "应该正确处理多步骤任务"
+      ]
+    }
+  ]
+}

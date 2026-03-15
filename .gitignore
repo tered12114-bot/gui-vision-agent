@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+.ruff_cache/
+*.skill
+
+# Config with sensitive data
+gui-vision/config/config.yaml
+
+# Keep example config
+!gui-vision/config/config.yaml.example
