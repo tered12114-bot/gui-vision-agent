@@ -1,4 +1,4 @@
-# GUI Vision Agent
+# GUI Vision Skills
 
 基于 qwen3.5-plus 视觉能力的 GUI 自动化 Agent，通过截图理解界面并执行点击、输入、拖拽等操作。
 
